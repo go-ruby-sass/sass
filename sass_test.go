@@ -135,6 +135,32 @@ func TestSassCEngineError(t *testing.T) {
 	}
 }
 
+// TestMinimaArithmeticAndColor pins the exact constructs from minima's
+// _base.scss that a stale go-scss aborted on ("Undefined operation 30px * 2")
+// or serialized differently. The expected strings are byte-verified against
+// dart-sass (sass-embedded 1.102.0), the jekyll-sass-converter 3.1.0 oracle.
+func TestMinimaArithmeticAndColor(t *testing.T) {
+	src := `$spacing-unit: 30px;
+$content-width: 800px;
+$brand-color: #2a7ae2;
+.a { max-width: calc(#{$content-width} - (#{$spacing-unit} * 2)); }
+.b { color: darken($brand-color, 15%); }
+.c { padding: ($spacing-unit * 0.5); }`
+	res, err := sass.CompileString(src, nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, want := range []string{
+		"max-width: calc(800px - 30px * 2);",
+		"color: rgb(8.9993518068%, 33.8251498947%, 66.0986874088%);",
+		"padding: 15px;",
+	} {
+		if !strings.Contains(res.CSS, want) {
+			t.Errorf("missing %q in\n%s", want, res.CSS)
+		}
+	}
+}
+
 // TestJekyllPath exercises the exact call jekyll-sass-converter makes.
 func TestJekyllPath(t *testing.T) {
 	src := `$brand: #2a7ae2;
