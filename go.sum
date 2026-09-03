@@ -2,3 +2,5 @@ github.com/go-scss/scss v0.0.0-20260803114742-42d746e6ec68 h1:OmjOHHpNiHAu7EphJL
 github.com/go-scss/scss v0.0.0-20260803114742-42d746e6ec68/go.mod h1:TcSRuwTSVas0+vXMRFdq4RiAmlaK+z5FQh1/6+4fWTo=
 github.com/go-scss/scss v0.0.0-20260830080002-964895f14fa4 h1:jARJX5zfIigtBLnr2m63ZlR/fssdCz1q63+nHAJAAkw=
 github.com/go-scss/scss v0.0.0-20260830080002-964895f14fa4/go.mod h1:TcSRuwTSVas0+vXMRFdq4RiAmlaK+z5FQh1/6+4fWTo=
+github.com/go-scss/scss v0.0.0-20260901193330-1ec287aec907 h1:NvD7kwOhnFulnjzxiuDag0+DJlMd9puNd8C6gaJeAA0=
+github.com/go-scss/scss v0.0.0-20260901193330-1ec287aec907/go.mod h1:TcSRuwTSVas0+vXMRFdq4RiAmlaK+z5FQh1/6+4fWTo=
