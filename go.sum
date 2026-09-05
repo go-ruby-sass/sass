@@ -4,3 +4,5 @@ github.com/go-scss/scss v0.0.0-20260830080002-964895f14fa4 h1:jARJX5zfIigtBLnr2m
 github.com/go-scss/scss v0.0.0-20260830080002-964895f14fa4/go.mod h1:TcSRuwTSVas0+vXMRFdq4RiAmlaK+z5FQh1/6+4fWTo=
 github.com/go-scss/scss v0.0.0-20260901193330-1ec287aec907 h1:NvD7kwOhnFulnjzxiuDag0+DJlMd9puNd8C6gaJeAA0=
 github.com/go-scss/scss v0.0.0-20260901193330-1ec287aec907/go.mod h1:TcSRuwTSVas0+vXMRFdq4RiAmlaK+z5FQh1/6+4fWTo=
+github.com/go-scss/scss v0.0.0-20260905061546-39932e01faa4 h1:PpCxQnwQfCJXYKj1HdDjECB3u/c/c4wOawMPT5LCFVs=
+github.com/go-scss/scss v0.0.0-20260905061546-39932e01faa4/go.mod h1:TcSRuwTSVas0+vXMRFdq4RiAmlaK+z5FQh1/6+4fWTo=
